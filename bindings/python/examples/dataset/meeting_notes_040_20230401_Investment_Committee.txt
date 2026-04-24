@@ -1,0 +1,45 @@
+Meeting Notes
+
+Meeting Type: Investment Committee
+Date: April 01, 2023
+Attendees: Amanda Foster, Marcus Webb, Sarah Chen, Michael Torres, David Kim, James Morrison
+
+**Discussion Points:**
+
+1. **Current Market Landscape:**
+   - Amanda Foster opened the discussion by presenting the latest market data, indicating a 15% increase in competition within the tech sector, specifically in software as a service (SaaS). This rise is attributed primarily to the entry of three new startups, each securing significant venture capital funding.
+   - Sarah Chen highlighted the performance of competitors, noting that TechNova Inc. reported a 25% growth in Q1 2023, driven by their aggressive pricing strategy, which poses a potential risk to our portfolio company, Softwave Solutions.
+
+2. **SWOT Analysis of Key Competitors:**
+   - Marcus Webb led a SWOT analysis focusing on BrightCloud Technologies and CloudStream Inc. He noted that while both companies have robust product offerings, their weaknesses lie in customer service and retention rates. Detailed statistics showed BrightCloud's churn rate at 18%, compared to Softwave's 10%.
+   - Michael Torres mentioned the opportunity for Softwave to enhance its service offerings by implementing a customer feedback loop to address service gaps identified in competitor reviews.
+
+3. **Financial Implications:**
+   - David Kim presented a financial forecast indicating that if Softwave does not adapt its pricing strategy, it could see a revenue decline of up to 12% by Q3 2023. He recommended a proactive approach to adjust pricing models in line with market trends.
+
+**Key Decisions Made:**
+- The committee unanimously agreed to authorize a competitive intelligence initiative to gather further data on competitor pricing strategies, customer satisfaction, and market trends over the next six months.
+- It was decided that Softwave Solutions should implement a revised pricing model by May 15, 2023, to remain competitive.
+
+**Action Items:**
+1. **Competitive Intelligence Report:**
+   - Owner: James Morrison
+   - Deadline: April 30, 2023
+   - Task: Develop and present a comprehensive report on competitor pricing and customer satisfaction metrics.
+
+2. **Pricing Strategy Revision:**
+   - Owner: Sarah Chen
+   - Deadline: May 15, 2023
+   - Task: Work with Softwave’s finance team to propose a new pricing model based on insights gathered from the competitive intelligence report.
+
+3. **Customer Feedback Implementation:**
+   - Owner: Michael Torres
+   - Deadline: June 01, 2023
+   - Task: Establish a customer feedback loop, including surveys and focus groups, to identify areas for improvement in service delivery.
+
+**Next Steps:**
+- Schedule a follow-up meeting for May 20, 2023, to review the competitive intelligence report and pricing strategy proposals.
+- Monitor Softwave's performance metrics closely to measure the effectiveness of any implemented strategies.
+- Ensure that all action items are aligned with the overall investment strategy and risk management framework of the firm.
+
+Meeting adjourned at 3:30 PM.

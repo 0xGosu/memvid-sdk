@@ -1,0 +1,47 @@
+Meeting Notes
+**Meeting Type:** Due Diligence Kickoff
+**Date:** June 28, 2023
+**Attendees:** Sarah Chen, David Kim, Michael Torres
+
+**Discussion Points:**
+
+1. **Overview of Target Company: Tech Innovations Inc.**
+   - The meeting commenced with Sarah Chen providing an overview of Tech Innovations Inc., which specializes in AI-driven software solutions for the healthcare industry. She highlighted the company’s revenue growth from $5 million in 2020 to $12 million in 2022, with a projected revenue of $20 million by the end of 2023.
+   - The firm is considering an acquisition offer, with an estimated valuation of $50 million.
+
+2. **Management Team Changes**
+   - David Kim raised concerns regarding recent changes in the management team, specifically the departure of COO Jessica Ramirez last month. The team discussed the potential impact of this change on operational stability and company culture.
+   - Michael Torres emphasized the need to assess the interim leadership's effectiveness, particularly the newly appointed acting COO, Brian Lee, who has been with the company for three years. Michael suggested evaluating Brian’s previous performance metrics and how they align with current strategic goals.
+
+3. **Customer Contracts and Pipeline**
+   - Sarah presented the customer contract status, noting that 80% of Tech Innovations' revenue comes from long-term contracts with major clients such as HealthCorp and MedSys Solutions. The contracts are set to renew in Q4 2023. The team discussed the importance of understanding customer sentiments during this transition phase in leadership.
+
+4. **Financial Projections and Risks**
+   - David reviewed the financial projections, highlighting potential risks due to the management changes. The team noted that the projected growth rate of 67% may be ambitious if the management transition is not handled effectively.
+
+**Action Items:**
+1. **Conduct Management Interviews**
+   - Owner: Michael Torres
+   - Deadline: July 12, 2023
+   - Task: Schedule and conduct interviews with Brian Lee and other key management personnel to assess their vision and capability to lead through the acquisition process.
+
+2. **Client Sentiment Survey**
+   - Owner: Sarah Chen
+   - Deadline: July 10, 2023
+   - Task: Develop and distribute a survey to key clients to gauge their confidence in Tech Innovations during this period of management transition.
+
+3. **Risk Assessment Report**
+   - Owner: David Kim
+   - Deadline: July 15, 2023
+   - Task: Prepare a comprehensive risk assessment report outlining potential impacts of management changes on revenue projections and client relationships.
+
+**Key Decisions Made:**
+- The team agreed to move forward with a detailed due diligence process focused on evaluating the management team's capacity and stability.
+- It was decided that the primary focus for the next meeting would be to review findings from the management interviews and client sentiment survey.
+
+**Next Steps:**
+- Michael to report back on management interviews by July 12, 2023.
+- Sarah to provide preliminary results from the client survey by July 10, 2023.
+- David to finalize the risk assessment report for review in the next meeting scheduled for July 20, 2023.
+
+The meeting concluded with a consensus on the importance of thorough due diligence to ensure a successful acquisition and integration of Tech Innovations Inc. into the firm's portfolio.

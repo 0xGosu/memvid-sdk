@@ -1,0 +1,181 @@
+{
+  "generated_at": "2025-12-01T14:38:47.405344",
+  "total_documents": 75,
+  "files": [
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_001_Atlas_Logistics.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_002_Atlas_Logistics.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_003_Meridian_Holdings.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_004_GreenField_Energy.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_005_Urban_Dynamics.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_006_Atlas_Logistics.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_007_Atlas_Logistics.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_008_Atlas_Logistics.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_009_Pinnacle_Financial.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_010_Pinnacle_Financial.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_011_NovaTech_Solutions.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_012_Urban_Dynamics.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_013_Pinnacle_Financial.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_014_NovaTech_Solutions.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_015_NovaTech_Solutions.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_016_Atlas_Logistics.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_017_Pinnacle_Financial.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_018_Acme_Corporation.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_019_Pinnacle_Financial.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/deal_memo_020_TechStart_Inc.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/quarterly_report_021_GreenField_Energy_Q1_2023.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/quarterly_report_022_TechStart_Inc_Q2_2024.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/quarterly_report_023_Meridian_Holdings_Q3_2024.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/quarterly_report_024_Urban_Dynamics_Q2_2023.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/quarterly_report_025_Atlas_Logistics_Q1_2023.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/quarterly_report_026_Atlas_Logistics_Q2_2024.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/quarterly_report_027_NovaTech_Solutions_Q4_2024.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/quarterly_report_028_GreenField_Energy_Q4_2024.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/quarterly_report_029_Meridian_Holdings_Q4_2023.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/quarterly_report_030_Meridian_Holdings_Q4_2023.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/quarterly_report_031_Acme_Corporation_Q4_2023.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/quarterly_report_032_Meridian_Holdings_Q3_2024.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/quarterly_report_033_Acme_Corporation_Q1_2023.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/quarterly_report_034_Meridian_Holdings_Q1_2023.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/quarterly_report_035_TechStart_Inc_Q2_2023.pdf",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_036_20240107_Deal_Team_Sync.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_037_20230804_Deal_Team_Sync.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_038_20240915_Portfolio_Review.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_039_20240629_Annual_Strategy_Session.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_040_20230401_Investment_Committee.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_041_20231121_Investment_Committee.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_042_20231024_Annual_Strategy_Session.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_043_20230628_Due_Diligence_Kickoff.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_044_20230725_Investment_Committee.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_045_20230819_Due_Diligence_Kickoff.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_046_20230715_Partner_Meeting.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_047_20231005_Annual_Strategy_Session.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_048_20241208_Due_Diligence_Kickoff.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_049_20241203_Deal_Team_Sync.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_050_20240804_Partner_Meeting.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_051_20231224_Due_Diligence_Kickoff.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_052_20230925_Partner_Meeting.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_053_20240530_Partner_Meeting.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_054_20230117_Portfolio_Review.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/meeting_notes_055_20231107_Partner_Meeting.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_056_Logistics_and_Supply_Chain.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_057_Enterprise_Software.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_058_Business_Services.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_059_Healthcare_Services.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_060_Logistics_and_Supply_Chain.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_061_Business_Services.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_062_Enterprise_Software.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_063_Industrial_Manufacturing.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_064_Clean_Energy.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_065_Financial_Services.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_066_Enterprise_Software.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_067_Logistics_and_Supply_Chain.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_068_Consumer_Retail.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_069_Healthcare_Services.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_070_Consumer_Retail.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_071_Business_Services.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_072_Financial_Services.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_073_Industrial_Manufacturing.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_074_Consumer_Retail.txt",
+    "/Users/olow/Desktop/memvid-org/brickfield/datasets/market_research_075_Industrial_Manufacturing.txt"
+  ],
+  "companies": [
+    {
+      "name": "TechStart Inc.",
+      "sector": "SaaS/Technology",
+      "stage": "Series B",
+      "investment": "$45M",
+      "ownership": "32%"
+    },
+    {
+      "name": "Meridian Holdings",
+      "sector": "Manufacturing",
+      "stage": "Buyout",
+      "investment": "$120M",
+      "ownership": "85%"
+    },
+    {
+      "name": "Acme Corporation",
+      "sector": "Retail",
+      "stage": "Growth Equity",
+      "investment": "$75M",
+      "ownership": "45%"
+    },
+    {
+      "name": "NovaTech Solutions",
+      "sector": "Healthcare IT",
+      "stage": "Series C",
+      "investment": "$60M",
+      "ownership": "28%"
+    },
+    {
+      "name": "GreenField Energy",
+      "sector": "Renewables",
+      "stage": "Growth Equity",
+      "investment": "$90M",
+      "ownership": "55%"
+    },
+    {
+      "name": "Atlas Logistics",
+      "sector": "Supply Chain",
+      "stage": "Buyout",
+      "investment": "$200M",
+      "ownership": "92%"
+    },
+    {
+      "name": "Pinnacle Financial",
+      "sector": "Fintech",
+      "stage": "Series B",
+      "investment": "$35M",
+      "ownership": "25%"
+    },
+    {
+      "name": "Urban Dynamics",
+      "sector": "Real Estate Tech",
+      "stage": "Series A",
+      "investment": "$20M",
+      "ownership": "30%"
+    }
+  ],
+  "personnel": [
+    {
+      "name": "Marcus Webb",
+      "title": "Managing Partner",
+      "email": "mwebb@brickfieldep.com"
+    },
+    {
+      "name": "Sarah Chen",
+      "title": "Partner, Technology",
+      "email": "schen@brickfieldep.com"
+    },
+    {
+      "name": "James Morrison",
+      "title": "Partner, Healthcare",
+      "email": "jmorrison@brickfieldep.com"
+    },
+    {
+      "name": "Elena Rodriguez",
+      "title": "VP, Operations",
+      "email": "erodriguez@brickfieldep.com"
+    },
+    {
+      "name": "David Kim",
+      "title": "Senior Analyst",
+      "email": "dkim@brickfieldep.com"
+    },
+    {
+      "name": "Amanda Foster",
+      "title": "Principal",
+      "email": "afoster@brickfieldep.com"
+    },
+    {
+      "name": "Michael Torres",
+      "title": "Associate",
+      "email": "mtorres@brickfieldep.com"
+    },
+    {
+      "name": "Jennifer Liu",
+      "title": "CFO",
+      "email": "jliu@brickfieldep.com"
+    }
+  ]
+}

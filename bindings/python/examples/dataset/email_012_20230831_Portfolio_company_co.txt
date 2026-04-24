@@ -1,0 +1,27 @@
+From: Sarah Chen <schen@brickfieldep.com>
+To: Jennifer Liu <jliu@brickfieldep.com>
+Date: August 31, 2023 12:00 AM
+Subject: Portfolio company concerns - TechStart Inc.
+
+**From:** Johnathan Reed <jreed@capitalpartners.com>
+**To:** Sarah Thompson <sthompson@capitalpartners.com>
+**Cc:** Michael Chen <mchen@capitalpartners.com>, Lisa Patel <lpatel@capitalpartners.com>
+**Date:** October 15, 2023
+**Subject:** Concerns Regarding Portfolio Performance of TechStart Inc.
+
+Dear Sarah,
+
+I hope this message finds you well. As we approach our quarterly review next week, I wanted to bring your attention to some pressing concerns regarding TechStart Inc., our portfolio company that has been a significant focus since our acquisition in May 2022.
+
+While TechStart has exhibited a solid growth trajectory over the past year, recent performance indicators suggest a potential slowdown that merits our immediate attention. As of Q3 2023, TechStart reported a revenue increase of only 5% year-over-year, which falls short of the projected 15% growth we had anticipated based on their previous trajectory and market trends. This disparity is largely attributed to decreased demand for their flagship software product, CloudSync, which faces increasing competition from emerging players.
+
+Moreover, their customer acquisition cost (CAC) has escalated to $150 per user, a 20% increase from $125 last quarter. This uptick raises concerns about their marketing efficiency and the sustainability of their customer base. Conversely, their customer lifetime value (CLV) has remained steady at $600, suggesting that while customers are retained, our cost to acquire them is becoming prohibitive.
+
+I propose we convene a meeting with TechStart’s executive team to discuss these issues in detail. We should explore their current strategies and assess whether they are aligned with shifting market demands. Additionally, it may be beneficial to analyze their R&D allocation, which has stagnated at 10% of revenue, as we may need to advocate for increased investment in product innovation to remain competitive.
+
+Let's discuss this further during our strategy meeting on October 20th. I believe a proactive approach is essential to ensure TechStart remains a strong contributor to our portfolio.
+
+Best regards,
+Johnathan Reed
+Senior Associate
+Capital Partners Private Equity

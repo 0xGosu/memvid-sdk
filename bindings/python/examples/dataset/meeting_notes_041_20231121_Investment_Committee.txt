@@ -1,0 +1,42 @@
+Meeting Notes
+**Meeting Type:** Investment Committee
+**Date:** November 21, 2023
+**Attendees:** Michael Torres, Elena Rodriguez, Amanda Foster, David Kim
+
+**Discussion Points:**
+1. **LP Reporting Requirements Overview**
+   Elena Rodriguez provided an update on the upcoming Limited Partner (LP) reporting requirements set to take effect on January 1, 2024. These regulations mandate that private equity firms provide detailed performance metrics, including net internal rates of return (IRR), cash-on-cash returns, and annual distributions. Specifically, the firm must report an annualized net IRR of 15% for the previous fiscal year, which is critical in maintaining investor confidence.
+
+2. **Compliance Strategy**
+   Michael Torres emphasized the importance of developing a robust compliance strategy to meet the new reporting standards. Amanda Foster suggested implementing a new reporting software, "Eureka Analytics," which is projected to cost $40,000 annually but could streamline the data aggregation process significantly. The committee discussed the potential ROI of investing in this software against the manual reporting costs estimated at $25,000 annually.
+
+3. **Data Collection and Analysis**
+   David Kim raised concerns about the current data collection methods, which rely on spreadsheets that can lead to inaccuracies. The committee agreed that a dedicated data analyst should be hired by December 15, 2023, to facilitate the transition to automated reporting. Michael pointed out the need for historical data analysis to align with the new reporting requirements, which would require an additional two weeks of preparation time.
+
+**Key Decisions Made:**
+- Approve the budget for "Eureka Analytics" software with a cap of $40,000 for the first year.
+- Hire a data analyst with a target start date of December 15, 2023.
+- Establish a timeline for historical data review to conclude by December 30, 2023.
+
+**Action Items:**
+1. **Software Acquisition**
+   - Owner: Amanda Foster
+   - Deadline: December 1, 2023
+
+2. **Recruitment of Data Analyst**
+   - Owner: David Kim
+   - Deadline: December 10, 2023
+
+3. **Historical Data Review**
+   - Owner: Michael Torres
+   - Deadline: December 30, 2023
+
+4. **Final Review of LP Reporting Template**
+   - Owner: Elena Rodriguez
+   - Deadline: January 5, 2024
+
+**Next Steps:**
+- Schedule a follow-up meeting on January 10, 2024, to review progress on the action items and ensure all aspects of the LP reporting requirements are on track for the January 1 compliance deadline.
+- Prepare an interim report for the next Investment Committee meeting to assess the effectiveness of the new software and the performance of the newly hired data analyst.
+
+The meeting concluded at 3:00 PM with all members expressing commitment to meeting the LP reporting requirements and maintaining the firm's strong reputation in the private equity space.

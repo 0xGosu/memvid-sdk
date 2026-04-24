@@ -1,0 +1,47 @@
+Meeting Notes
+Meeting Type: Portfolio Review
+Date: January 17, 2023
+Attendees: Michael Torres, David Kim, Sarah Chen, Marcus Webb, Amanda Foster
+
+**Discussion Points:**
+
+1. **Review of Current Portfolio Performance**
+   - Michael Torres opened the meeting by highlighting that the portfolio companies have shown an average growth of 12% in EBITDA over the last quarter.
+   - Sarah Chen provided insights on Company X, noting that its sales increased by 15% due to the successful launch of their new product line in Q4 2022.
+
+2. **Add-on Acquisition Opportunity**
+   - David Kim presented an add-on acquisition opportunity for Company X to acquire Tech Innovations, Inc., a software company specializing in data analytics.
+   - Tech Innovations has demonstrated an annual revenue of $10 million with an EBITDA margin of 25%.
+   - The asking price for Tech Innovations is $7 million, which aligns with the overall acquisition strategy to bolster Company X’s technological capabilities and enhance service offerings.
+   - Marcus Webb raised concerns about potential integration challenges, suggesting a more thorough integration plan would be necessary to mitigate risks.
+
+3. **Market Trends and Competitive Landscape**
+   - Amanda Foster shared research on market trends, indicating a growing demand for data-driven decision-making tools across various sectors. This supports the strategic rationale for the acquisition.
+
+**Key Decisions Made:**
+- The committee unanimously agreed to proceed with due diligence on Tech Innovations, Inc.
+- A budget of up to $1 million was approved for the due diligence process, including legal and advisory fees.
+
+**Action Items:**
+1. **Due Diligence Initiation**
+   - **Owner:** David Kim
+   - **Deadline:** February 15, 2023
+
+2. **Integration Plan Development**
+   - **Owner:** Marcus Webb
+   - **Deadline:** February 20, 2023
+
+3. **Vendor Assessment for Financial Advisory Services**
+   - **Owner:** Sarah Chen
+   - **Deadline:** January 31, 2023
+
+4. **Market Analysis Report Completion**
+   - **Owner:** Amanda Foster
+   - **Deadline:** February 10, 2023
+
+**Next Steps:**
+- The team will reconvene on February 22, 2023, to discuss findings from the due diligence process and evaluate the feasibility of moving forward with the acquisition.
+- Michael Torres will prepare a summary report of the meeting for distribution to all stakeholders, ensuring alignment on the next steps and action items.
+
+**Conclusion:**
+The meeting concluded with a strong focus on the importance of strategic acquisitions to enhance company growth. All attendees expressed optimism about the potential acquisition of Tech Innovations, Inc. and its alignment with Company X's vision for the future.

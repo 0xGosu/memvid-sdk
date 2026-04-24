@@ -1,0 +1,19 @@
+# Development dependencies for memvid Python bindings
+
+# Required for examples
+beautifulsoup4>=4.12.0
+readability-lxml>=0.8.1
+lxml>=4.9.0
+
+# Browser automation (for webshot_agent.py)
+browser-use>=0.1.0
+playwright>=1.40.0  # Required by browser-use
+
+# Testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+
+# Code quality
+black>=23.0.0
+mypy>=1.0.0
+ruff>=0.1.0

@@ -1,0 +1,34 @@
+[package]
+name = "memvid-ask-model"
+version = "2.0.139"
+edition = "2024"
+rust-version = "1.85.0"
+license = "Apache-2.0"
+description = "LLM inference module for Memvid Q&A with local and cloud model support"
+repository = "https://github.com/memvid/memvid"
+documentation = "https://docs.memvid.com"
+readme = "README.md"
+keywords = ["ai", "llm", "inference", "memvid", "rag"]
+categories = ["science", "text-processing"]
+
+[features]
+default = ["llama-cpp"]
+# llama.cpp backend - optional, requires LLVM/libclang for building
+# Disabled by default for Docker ARM emulation and Windows ARM builds
+llama-cpp = ["dep:llama_cpp"]
+
+[dependencies]
+anyhow = "1.0"
+# Note: vec feature removed - it pulls in ort+tokenizers which have CRT conflicts on Windows
+# (ort uses MD_DynamicRelease, tokenizers/esaxx-rs uses MT_StaticRelease)
+memvid-core = { version = "2.0.139", path = "../memvid-core", features = ["lex", "temporal_track"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+# Use rustls to avoid OpenSSL dependency for cross-platform builds
+reqwest = { version = "0.11.27", default-features = false, features = ["blocking", "json", "rustls-tls"] }
+tokio = { version = "1.47.1", features = ["rt", "rt-multi-thread"] }
+# llama.cpp backend - optional, requires gemm with ARM FP16 SIMD (fullfp16)
+llama_cpp = { version = "0.3.2", optional = true }
+# For answer caching
+lazy_static = "1.5"
+blake3 = "1.5"

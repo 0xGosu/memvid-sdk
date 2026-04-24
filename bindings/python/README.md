@@ -1,0 +1,379 @@
+# memvid-sdk-free
+
+A single-file AI memory system for Python. Store documents, search with BM25 + vector ranking, and run RAG queries from a portable `.mv2` file.
+
+Built on Rust with PyO3 bindings. No database setup, no external services required.
+
+## Install
+
+```bash
+pip install memvid-sdk-free
+```
+
+For framework integrations:
+
+```bash
+pip install "memvid-sdk-free[langchain]"    # LangChain tools
+pip install "memvid-sdk-free[llamaindex]"   # LlamaIndex query engine
+pip install "memvid-sdk-free[openai]"       # OpenAI function schemas
+pip install "memvid-sdk-free[full]"         # All integrations
+```
+
+## Quick Start
+
+```python
+from memvid_sdk import create
+
+# Create a memory file
+mv = create("notes.mv2")
+
+# Store some documents
+mv.put(
+    title="Project Update",
+    label="meeting",
+    text="Discussed Q4 roadmap. Alice will handle the frontend refactor.",
+    metadata={"date": "2024-01-15", "attendees": ["Alice", "Bob"]}
+)
+
+mv.put(
+    title="Technical Decision",
+    label="architecture",
+    text="Decided to use PostgreSQL for the main database. Redis for caching.",
+)
+
+# Search by keyword
+results = mv.find("database")
+for hit in results["hits"]:
+    print(f"{hit['title']}: {hit['snippet']}")
+
+# Ask a question
+answer = mv.ask("What database are we using?", model="openai:gpt-4o-mini")
+print(answer["text"])
+
+# Close the file
+mv.seal()
+```
+
+## Core API
+
+### Opening and Creating
+
+```python
+from memvid_sdk import create, use
+
+# Create a new memory file
+mv = create("notes.mv2")
+
+# Open an existing file
+mv = use("basic", "notes.mv2", mode="open")
+
+# Create or open (auto mode)
+mv = use("basic", "notes.mv2", mode="auto")
+
+# Open read-only
+mv = use("basic", "notes.mv2", read_only=True)
+
+# Context manager (auto-closes)
+with use("basic", "notes.mv2") as mv:
+    mv.put(title="Note", label="general", text="Content here")
+```
+
+### Storing Documents
+
+```python
+# Store text content
+mv.put(
+    title="Meeting Notes",
+    label="meeting",
+    text="Discussed the new API design.",
+    metadata={"date": "2024-01-15", "priority": "high"},
+    tags=["api", "design", "q1"]
+)
+
+# Store a file (PDF, DOCX, TXT, etc.)
+mv.put(
+    title="Q4 Report",
+    label="reports",
+    file="./documents/q4-report.pdf"
+)
+
+# Store with both text and file
+mv.put(
+    title="Contract Summary",
+    label="legal",
+    text="Key terms: 2-year agreement, auto-renewal clause.",
+    file="./contracts/agreement.pdf"
+)
+```
+
+### Batch Ingestion
+
+For large imports, `put_many` is significantly faster:
+
+```python
+documents = [
+    {"title": "Doc 1", "label": "notes", "text": "First document content..."},
+    {"title": "Doc 2", "label": "notes", "text": "Second document content..."},
+    # ... thousands more
+]
+
+frame_ids = mv.put_many(documents)
+print(f"Added {len(frame_ids)} documents")
+```
+
+### Searching
+
+```python
+# Lexical search (BM25 ranking)
+results = mv.find("machine learning", k=10)
+
+for hit in results["hits"]:
+    print(f"{hit['title']}: {hit['snippet']}")
+```
+
+Search parameters:
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `k` | int | Number of results (default: 5) |
+| `snippet_chars` | int | Snippet length (default: 240) |
+| `mode` | str | `"lex"`, `"sem"`, or `"auto"` |
+| `scope` | str | Filter by URI prefix |
+
+### Semantic Search
+
+Semantic search requires embeddings. Generate them during ingestion:
+
+```python
+# Using local embeddings (bge-small, nomic, etc.)
+mv.put(
+    title="Document",
+    text="Content here...",
+    enable_embedding=True,
+    embedding_model="bge-small"
+)
+
+# Using OpenAI embeddings
+mv.put(
+    title="Document",
+    text="Content here...",
+    enable_embedding=True,
+    embedding_model="openai-small"  # requires OPENAI_API_KEY
+)
+```
+
+Then search semantically:
+
+```python
+results = mv.find("neural networks", mode="sem")
+```
+
+**Windows users:** Local embedding models (bge-small, nomic, etc.) are not available on Windows due to ONNX runtime limitations. Use OpenAI embeddings instead by setting `OPENAI_API_KEY`.
+
+### Question Answering (RAG)
+
+```python
+# Basic RAG query
+answer = mv.ask("What did we decide about the database?")
+print(answer["text"])
+
+# With specific model
+answer = mv.ask(
+    "Summarize the meeting notes",
+    model="openai:gpt-4o-mini",
+    k=6  # number of documents to retrieve
+)
+
+# Get context only (no LLM synthesis)
+context = mv.ask("What was discussed?", context_only=True)
+print(context["context"])  # Retrieved document snippets
+```
+
+### Timeline and Stats
+
+```python
+# Get recent entries
+entries = mv.timeline(limit=20)
+
+# Get statistics
+stats = mv.stats()
+print(f"Documents: {stats['frame_count']}")
+print(f"Size: {stats['size_bytes']} bytes")
+```
+
+### Closing
+
+Always close the memory when done:
+
+```python
+mv.seal()
+```
+
+Or use a context manager for automatic cleanup.
+
+### ACL Helpers (Scoped Keys)
+
+Use API-key scope helpers to avoid manually wiring tenant/role/group/subject:
+
+```python
+from memvid_sdk import (
+    get_acl_scope_from_api_key,
+    acl_context_from_scope,
+    acl_metadata_from_scope,
+)
+
+scope = get_acl_scope_from_api_key()
+acl_context = acl_context_from_scope(scope)
+metadata = acl_metadata_from_scope(scope)
+
+mv.put(title="Doc", label="acl", text="...", metadata=metadata)
+hits = mv.find("query", acl_context=acl_context, acl_enforcement_mode="enforce")
+```
+
+## External Embeddings
+
+For more control over embeddings, use external providers:
+
+```python
+from memvid_sdk import create
+from memvid_sdk.embeddings import OpenAIEmbeddings
+
+# Create memory with vector index enabled
+mv = create("knowledge.mv2", enable_vec=True, enable_lex=True)
+
+# Initialize embedding provider
+embedder = OpenAIEmbeddings(model="text-embedding-3-small")
+
+# Prepare documents
+documents = [
+    {"title": "ML Basics", "label": "ai", "text": "Machine learning enables systems to learn from data."},
+    {"title": "Deep Learning", "label": "ai", "text": "Deep learning uses neural networks with multiple layers."},
+]
+
+# Generate embeddings
+texts = [doc["text"] for doc in documents]
+embeddings = embedder.embed_documents(texts)
+
+# Store documents with pre-computed embeddings
+frame_ids = mv.put_many(documents, embeddings=embeddings)
+
+# Search using external embeddings
+query = "neural networks"
+query_embedding = embedder.embed_query(query)
+results = mv.find(query, k=3, query_embedding=query_embedding, mode="sem")
+
+for hit in results["hits"]:
+    print(f"{hit['title']}: {hit['score']:.3f}")
+```
+
+Built-in providers:
+- `OpenAIEmbeddings` (requires `OPENAI_API_KEY`)
+- `CohereEmbeddings` (requires `COHERE_API_KEY`)
+- `VoyageEmbeddings` (requires `VOYAGE_API_KEY`)
+- `NvidiaEmbeddings` (requires `NVIDIA_API_KEY`)
+- `GeminiEmbeddings` (requires `GOOGLE_API_KEY` or `GEMINI_API_KEY`)
+- `MistralEmbeddings` (requires `MISTRAL_API_KEY`)
+- `HuggingFaceEmbeddings` (local, no API key)
+
+Use the factory function for quick setup:
+
+```python
+from memvid_sdk.embeddings import get_embedder
+
+# Create any supported provider
+embedder = get_embedder("openai")  # or "cohere", "voyage", "nvidia", "gemini", "mistral", "huggingface"
+```
+
+## Framework Integrations
+
+### LangChain
+
+```python
+mv = use("langchain", "notes.mv2")
+tools = mv.tools  # List of StructuredTool instances
+```
+
+### LlamaIndex
+
+```python
+mv = use("llamaindex", "notes.mv2")
+engine = mv.as_query_engine()
+response = engine.query("What is the timeline?")
+```
+
+### OpenAI Function Calling
+
+```python
+mv = use("openai", "notes.mv2")
+functions = mv.functions  # JSON schemas for tool_calls
+```
+
+### CrewAI
+
+```python
+mv = use("crewai", "notes.mv2")
+tools = mv.tools  # CrewAI-compatible tools
+```
+
+## Error Handling
+
+Typed exceptions for programmatic handling:
+
+```python
+from memvid_sdk import CapacityExceededError, LockedError, EmbeddingFailedError
+
+try:
+    mv.put(title="Doc", text="Content")
+except CapacityExceededError:
+    print("Storage capacity exceeded")
+except LockedError:
+    print("File is locked by another process")
+except EmbeddingFailedError:
+    print("Embedding generation failed")
+```
+
+Common exceptions:
+
+| Code | Exception | Description |
+|------|-----------|-------------|
+| MV001 | `CapacityExceededError` | Storage capacity exceeded |
+| MV007 | `LockedError` | File locked by another process |
+| MV010 | `FrameNotFoundError` | Frame not found |
+| MV013 | `FileNotFoundError` | File not found |
+| MV015 | `EmbeddingFailedError` | Embedding failed |
+
+## Environment Variables
+
+| Variable | Description |
+|----------|-------------|
+| `OPENAI_API_KEY` | For OpenAI embeddings and LLM synthesis |
+| `OPENAI_BASE_URL` | Custom OpenAI-compatible endpoint |
+| `NVIDIA_API_KEY` | For NVIDIA NIM embeddings |
+| `MEMVID_MODELS_DIR` | Local embedding model cache directory |
+| `MEMVID_API_KEY` | For capacity beyond the free tier |
+| `MEMVID_OFFLINE` | Set to `1` to disable network features |
+
+## Platform Support
+
+| Platform | Architecture | Local Embeddings |
+|----------|--------------|------------------|
+| macOS | ARM64 (Apple Silicon) | Yes |
+| macOS | x64 (Intel) | Yes |
+| Linux | x64 (glibc) | Yes |
+| Windows | x64 | No (use OpenAI) |
+
+## Requirements
+
+- Python 3.8 or later
+- For local embeddings: macOS or Linux (Windows requires OpenAI)
+
+## More Information
+
+- Documentation: https://docs.memvid.com
+- GitHub: https://github.com/0xgosu/memvid-sdk
+- Discord: https://discord.gg/2mynS7fcK7
+- Website: https://memvid.com
+
+## License
+
+Apache-2.0

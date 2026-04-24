@@ -1,0 +1,53 @@
+{
+  "meeting_type": "Deal Team Sync",
+  "date": "2024-01-07",
+  "attendees": [
+    "Amanda Foster",
+    "Sarah Chen",
+    "James Morrison",
+    "David Kim",
+    "Michael Torres"
+  ],
+  "discussion_points": [
+    {
+      "topic": "ESG Compliance Update",
+      "details": [
+        {
+          "point": "Amanda Foster reviewed the current ESG framework applied to our portfolio companies. Notably, the compliance level among our top five holdings—Tech Innovations Inc., Green Energy Solutions, HealthCare Analytics, Global Retail Corp., and FinTech Dynamics—averages 78%, with HealthCare Analytics leading at 85%."
+        },
+        {
+          "point": "Sarah Chen highlighted recent regulatory changes effective from December 1, 2023, requiring enhanced reporting standards for carbon emissions. This will impact our holdings in the energy sector, specifically Green Energy Solutions, which must align with the new standards by March 31, 2024."
+        },
+        {
+          "point": "David Kim presented insights from the recent ESG investor conference, where he noted an increasing interest in sustainable investments. The firm needs to consider integrating better ESG metrics into our investment thesis to attract more capital from ESG-focused funds."
+        }
+      ]
+    }
+  ],
+  "action_items": [
+    {
+      "item": "Conduct a detailed ESG audit for Green Energy Solutions to assess compliance with new carbon reporting standards.",
+      "owner": "Michael Torres",
+      "deadline": "2024-02-15"
+    },
+    {
+      "item": "Develop a comprehensive ESG reporting template applicable to all portfolio companies for consistent performance measurement.",
+      "owner": "Sarah Chen",
+      "deadline": "2024-02-28"
+    },
+    {
+      "item": "Schedule a follow-up meeting to review the ESG audit results and discuss potential impacts on investment decisions.",
+      "owner": "Amanda Foster",
+      "deadline": "2024-03-05"
+    }
+  ],
+  "key_decisions_made": [
+    "The team agreed to prioritize ESG compliance in our due diligence process for new investments, ensuring all prospective targets meet or exceed the firm's minimum ESG standards.",
+    "A decision was made to allocate an additional $100,000 towards the ESG compliance initiatives across our portfolio, which includes funding for third-party consultants and training programs."
+  ],
+  "next_steps": [
+    "Michael Torres will initiate the ESG audit for Green Energy Solutions and prepare for a preliminary report by the next sync meeting.",
+    "Sarah Chen will draft the ESG reporting template and circulate for feedback among the team prior to the next meeting.",
+    "Amanda Foster will coordinate with the marketing team to prepare a report on our ESG initiatives for the upcoming investor relations update scheduled for April 2024."
+  ]
+}

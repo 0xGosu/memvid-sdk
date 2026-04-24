@@ -1,0 +1,51 @@
+Meeting Notes
+
+**Meeting Type:** Deal Team Sync
+**Date:** August 04, 2023
+**Attendees:** Amanda Foster, David Kim, Jennifer Liu, Marcus Webb, James Morrison, Michael Torres
+
+**Discussion Points:**
+
+1. **Overview of Add-on Acquisition Opportunity:**
+   - Amanda Foster initiated the discussion regarding the potential add-on acquisition of TechSol, a SaaS provider specializing in cloud-based solutions for small to medium-sized enterprises.
+   - TechSol's financials showed a revenue growth rate of 25% year-over-year, with projected revenues of $15 million in 2023 and $18.75 million in 2024.
+   - The target valuation is set at $60 million, implying a 4x EBITDA multiple based on projected EBITDA of $15 million for 2023.
+
+2. **Strategic Fit:**
+   - Jennifer Liu emphasized that TechSol aligns well with our existing portfolio company, CloudInnovate, which focuses on digital transformation services.
+   - David Kim presented a SWOT analysis indicating that TechSol would enhance our competitive positioning by broadening service offerings and increasing market share.
+
+3. **Due Diligence Update:**
+   - Michael Torres reported that due diligence is currently 75% complete. Key findings include a strong management team and low customer churn rates at 5%.
+   - However, there are concerns about recent cybersecurity incidents affecting customer data. Amanda Foster instructed the team to follow up on TechSol's remediation measures.
+
+4. **Financial Projections:**
+   - Marcus Webb highlighted the potential for cost synergies, estimating annual savings of $3 million through operational integration with CloudInnovate.
+   - Jennifer Liu projected that achieving these synergies could enhance the IRR to 20% over a 5-year hold period.
+
+**Key Decisions Made:**
+- The team unanimously agreed to proceed with an initial offer of $55 million, contingent on the final due diligence report.
+- A decision was made to prioritize addressing the cybersecurity concerns with TechSol's management before formal negotiations commence.
+
+**Action Items:**
+1. Conduct follow-up meetings with TechSol's management regarding cybersecurity issues.
+   - **Owner:** Amanda Foster
+   - **Deadline:** August 15, 2023
+
+2. Complete the due diligence report, emphasizing financial health and cybersecurity measures.
+   - **Owner:** Michael Torres
+   - **Deadline:** August 18, 2023
+
+3. Prepare a detailed integration plan outlining operational synergies with CloudInnovate.
+   - **Owner:** Marcus Webb
+   - **Deadline:** August 20, 2023
+
+4. Draft the initial offer letter for TechSol, including justifications based on the valuation discussions.
+   - **Owner:** David Kim
+   - **Deadline:** August 22, 2023
+
+**Next Steps:**
+- Following the completion of the due diligence report, the deal team will reconvene on August 25, 2023, to finalize the offer strategy.
+- A follow-up meeting with TechSol’s management will be scheduled for August 29, 2023, to directly address cybersecurity issues and discuss potential deal structure.
+
+The meeting concluded with a positive outlook on the acquisition, emphasizing the strategic benefits TechSol could bring to the portfolio.

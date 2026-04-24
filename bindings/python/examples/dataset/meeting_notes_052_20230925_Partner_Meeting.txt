@@ -1,0 +1,45 @@
+Meeting Type: Partner Meeting
+Date: September 25, 2023
+Attendees: Sarah Chen, David Kim, Jennifer Liu, Elena Rodriguez
+
+**Meeting Notes**
+
+**Discussion Points:**
+
+1. **Overview of Add-On Acquisition Opportunity**
+   Jennifer Liu presented an opportunity to acquire TechSoft Innovations, a software development firm specializing in cloud-based solutions. TechSoft has a strong client roster, including major players like ABC Corp and XYZ Enterprises. The firm reported $5 million in EBITDA for the fiscal year ending June 30, 2023, with a year-over-year growth rate of 15%. The total asking price for TechSoft is $30 million, which represents a 6x multiple on last year’s EBITDA.
+
+2. **Market Analysis**
+   Sarah Chen highlighted the growing demand for cloud-based solutions in the current market, citing a report from Gartner that predicts a 25% growth in this sector over the next five years. The team discussed the strategic fit of TechSoft within the portfolio of current holdings, particularly its synergy with CloudTech Solutions, another firm within the portfolio.
+
+3. **Financial Considerations**
+   David Kim reviewed the financial projections for TechSoft, suggesting that with operational efficiencies and cross-selling opportunities, EBITDA could grow to $7 million within 24 months post-acquisition. The partners discussed financing options, including leveraging existing credit lines and potential co-investment from limited partners.
+
+4. **Risk Assessment**
+   Elena Rodriguez raised concerns about TechSoft's dependency on a few key clients, which accounted for 50% of its revenue. She suggested conducting a thorough customer concentration analysis and proposing a risk mitigation strategy as part of the due diligence process.
+
+**Action Items:**
+
+1. Conduct a detailed customer concentration analysis of TechSoft Innovations.
+   Owner: Elena Rodriguez
+   Deadline: October 10, 2023
+
+2. Prepare a comprehensive financial model projecting EBITDA growth post-acquisition, including scenarios for operational improvements.
+   Owner: David Kim
+   Deadline: October 5, 2023
+
+3. Develop an outreach plan for potential co-investors and prepare a presentation for the next partner meeting.
+   Owner: Jennifer Liu
+   Deadline: October 15, 2023
+
+**Key Decisions Made:**
+
+- The partners voted unanimously to proceed with the due diligence process for TechSoft Innovations.
+- It was agreed that a budget of up to $500,000 will be allocated for the due diligence phase, which will include third-party consultants for financial and operational assessments.
+
+**Next Steps:**
+
+- Schedule a follow-up meeting for October 20, 2023, to review the findings from the due diligence process and the financial model.
+- Finalize the investment thesis for TechSoft Innovations, incorporating insights from the customer concentration analysis and risk assessment.
+
+The meeting concluded with a focus on ensuring all action items are completed before the next scheduled meeting, prioritizing the swift progression of the acquisition opportunity.

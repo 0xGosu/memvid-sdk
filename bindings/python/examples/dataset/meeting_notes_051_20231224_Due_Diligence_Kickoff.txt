@@ -1,0 +1,52 @@
+Meeting Notes
+
+**Meeting Type:** Due Diligence Kickoff
+**Date:** December 24, 2023
+**Attendees:** Amanda Foster (Managing Director), Jennifer Liu (Senior Associate), James Morrison (Analyst), Sarah Chen (Director of Finance), David Kim (Legal Counsel), Marcus Webb (Operations Expert)
+
+**Discussion Points:**
+
+1. **Valuation Adjustment:**
+   - Amanda Foster initiated the discussion on the current valuation of TechSolutions Inc., which stands at $150 million based on preliminary financials.
+   - Jennifer Liu presented a detailed analysis indicating a potential downside risk of 15% due to increased competition and slower revenue growth projections. This would adjust the valuation to approximately $127.5 million.
+   - Sarah Chen highlighted discrepancies in projected EBITDA margins, suggesting further examination of the last three years' financial statements. Notably, the gross margins have declined from 30% to 25% over the last two years, raising concerns about operational efficiency.
+   - James Morrison agreed to conduct a comparative analysis of TechSolutions’ key competitors to better gauge market positioning and corroborate the need for any valuation adjustments.
+
+2. **Legal Considerations:**
+   - David Kim outlined the potential legal liabilities regarding ongoing litigation valued at $5 million, questioning how this might influence the overall valuation and investment appetite.
+   - It was agreed that David will obtain a detailed report from the legal team by January 5, 2024.
+
+3. **Operational Review:**
+   - Marcus Webb emphasized the importance of assessing the operational workflows within TechSolutions. He proposed scheduling site visits to their two primary facilities in Austin, TX, and Seattle, WA, to evaluate efficiency and workforce morale.
+
+**Action Items:**
+
+- **Comparative Analysis**:
+  Owner: James Morrison
+  Deadline: January 10, 2024
+
+- **Legal Report**:
+  Owner: David Kim
+  Deadline: January 5, 2024
+
+- **Site Visits Coordination**:
+  Owner: Marcus Webb
+  Deadline: January 15, 2024
+
+- **Financial Statement Review**:
+  Owner: Jennifer Liu
+  Deadline: January 12, 2024
+
+**Key Decisions Made:**
+
+1. Proceed with a revised valuation approach considering a potential adjustment to $127.5 million based on identified risks.
+2. Engage with the legal team to assess implications of ongoing litigation on the overall investment strategy.
+3. Schedule operational site visits to gather firsthand insights and evaluate workforce effectiveness.
+
+**Next Steps:**
+
+- Distribute meeting notes to all attendees by December 26, 2023.
+- Confirm deadlines for action items during the next meeting scheduled for January 20, 2024, where the team will review findings and adjust the strategy accordingly.
+- Schedule a follow-up meeting with TechSolutions’ management team to discuss their responses to the financial and operational concerns raised.
+
+The meeting concluded at 3:30 PM.

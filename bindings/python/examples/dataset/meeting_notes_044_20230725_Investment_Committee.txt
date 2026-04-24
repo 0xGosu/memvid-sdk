@@ -1,0 +1,46 @@
+Meeting Notes
+
+**Meeting Type:** Investment Committee
+**Date:** July 25, 2023
+**Attendees:** Sarah Chen, Jennifer Liu, James Morrison, Elena Rodriguez, David Kim
+
+**Discussion Points:**
+
+1. **Due Diligence Update on TechWave Inc.**
+   - **Presented by:** Jennifer Liu
+   - **Overview:** Jennifer provided an update on the due diligence process for TechWave Inc., a cloud computing service provider. The team has completed financial assessments, operational reviews, and market analysis.
+   - **Financial Review:** TechWave reported $15 million in revenue for FY 2022, a 35% year-over-year increase. EBITDA margins are currently at 25%. Jennifer noted that a deeper analysis of customer retention rates, which stand at 80%, is necessary to assess long-term viability.
+   - **Operational Concerns:** Elena raised concerns about TechWave's recent hiring spree, with 50 new employees added in Q2 2023, significantly increasing burn rates. The team needs to evaluate whether this expansion aligns with revenue growth projections.
+   - **Market Analysis:** James reported that the total addressable market (TAM) for cloud services is expected to reach $500 billion by 2025, with a CAGR of 20%. This aligns with TechWave's growth potential but raises competition concerns.
+
+2. **Competitive Landscape Assessment**
+   - **Presented by:** David Kim
+   - David highlighted the entry of new competitors into the cloud space, particularly CloudFlex, which has recently secured $25 million in funding. The team will need to revisit TechWave's competitive positioning.
+   - A SWOT analysis conducted by the team indicated TechWave's strengths in customer service and innovative technology but identified weaknesses in brand recognition.
+
+**Key Decisions Made:**
+- The Investment Committee decided to extend the due diligence timeline by two weeks to allow for a more thorough review of TechWave's customer retention strategies and competitive positioning.
+- Approved a budget of $50,000 for additional market research to analyze customer loyalty metrics.
+
+**Action Items:**
+1. **Customer Retention Analysis:**
+   - **Owner:** Elena Rodriguez
+   - **Deadline:** August 15, 2023
+   - Responsibility to gather data on customer churn rates and reasons for attrition.
+
+2. **Competitive Positioning Study:**
+   - **Owner:** David Kim
+   - **Deadline:** August 10, 2023
+   - Conduct a detailed SWOT analysis focusing on recent market entrants and their impact on TechWave.
+
+3. **Financial Metrics Review:**
+   - **Owner:** Jennifer Liu
+   - **Deadline:** August 5, 2023
+   - Evaluate TechWave's revenue projections and profitability metrics in the context of the cloud market trends.
+
+**Next Steps:**
+- Schedule a follow-up meeting on August 16, 2023, to review findings from the action items.
+- Prepare a comprehensive report summarizing all due diligence findings for the Investment Committee before the next meeting.
+- Engage with TechWave's management team for an additional round of interviews focusing on strategic growth plans and risk management.
+
+The meeting concluded with a consensus that thorough due diligence is critical to ensure the potential investment aligns with the firm’s strategic objectives.

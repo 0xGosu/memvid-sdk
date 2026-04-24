@@ -1,0 +1,49 @@
+[package]
+name = "memvid_sdk_py"
+version = "2.0.159"
+edition = "2021"
+description = "Python bindings for memvid-core"
+authors = ["Memvid Inc."]
+license = "Apache-2.0"
+publish = false
+readme = "README.md"
+
+[lib]
+name = "memvid_sdk"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.20", features = ["extension-module", "serde", "abi3", "abi3-py38"] }
+# Pin home to avoid rust-version 1.88 requirement in newer versions
+home = "=0.5.9"
+# Workspace-relative paths
+memvid-core = { path = "../../crates/memvid-core", default-features = false }
+# Disable llama-cpp to avoid Windows linker mismatch (esaxx-rs vs llama_cpp_sys runtime conflict)
+memvid-ask-model = { path = "../../crates/memvid-ask-model", default-features = false }
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+base64 = "0.21"
+libc = "0.2"
+# Use rustls instead of native-tls to avoid OpenSSL dependency on Linux
+ureq = { version = "2.9", default-features = false, features = ["json", "tls"] }
+uuid = { version = "1.0", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+hostname = "0.4.1"
+# fastembed is optional - disabled on Windows due to CRT mismatch (esaxx-rs MT_Static vs ort_sys MD_Dynamic)
+fastembed = { version = "5.3.1", optional = true }
+
+[features]
+default = ["lex", "vec", "temporal_track", "parallel_segments", "clip", "logic_mesh", "replay", "encryption", "fastembed", "pdf_extract"]
+# Lexical and vector search - core features for memvid
+lex = ["memvid-core/lex"]
+vec = ["memvid-core/vec"]
+temporal_track = ["memvid-core/temporal_track"]
+parallel_segments = ["memvid-core/parallel_segments"]
+clip = ["memvid-core/clip"]
+logic_mesh = ["memvid-core/logic_mesh"]
+replay = ["memvid-core/replay"]
+encryption = ["memvid-core/encryption"]
+# Pure Rust PDF extraction (works on all platforms without extractous)
+pdf_extract = ["memvid-core/pdf_extract"]
+# Apache Tika extraction via GraalVM - best quality, handles all fonts
+extractous = ["memvid-core/extractous"]

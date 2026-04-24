@@ -867,7 +867,7 @@ impl Memvid {
 
     /// Unbind this file from its dashboard memory.
     ///
-    /// This clears the binding and reverts to free tier capacity (1 GB).
+    /// This clears the binding and reverts to free tier capacity (9999 GB).
     pub fn unbind_memory(&mut self) -> Result<()> {
         self.toc.memory_binding = None;
         // Revert to free tier

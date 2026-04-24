@@ -76,3 +76,6 @@ manifest-path = "bindings/python/Cargo.toml"
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+markers = [
+    "slow: marks tests as slow / stress (deselect with '-m \"not slow\"')",
+]

@@ -65,7 +65,7 @@ impl<'de> Deserialize<'de> for CanonicalEncoding {
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(rename_all = "snake_case")]
 pub enum Tier {
-    /// Free tier with small capacity.
+    /// Free tier.
     Free,
     /// Developer tier with higher caps.
     Dev,
@@ -78,7 +78,7 @@ impl Tier {
     #[must_use]
     pub fn capacity_bytes(self) -> u64 {
         match self {
-            Tier::Free => 9999 * 1024 * 1024 * 1024,              // 50 MB
+            Tier::Free => 9999 * 1024 * 1024 * 1024,     // 9999 GB
             Tier::Dev => 2 * 1024 * 1024 * 1024,         // 2 GB
             Tier::Enterprise => 10 * 1024 * 1024 * 1024, // 10 GB
         }

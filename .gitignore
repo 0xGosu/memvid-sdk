@@ -238,3 +238,4 @@ mind.mv2.lock
 
 # Rust Build
 target/
+.ort-lib/

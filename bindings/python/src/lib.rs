@@ -66,9 +66,8 @@ const MAX_HIT_SNIPPET_CHARS: usize = 50000;
 const MAX_CONTEXT_SNIPPET_CHARS: usize = 50000;
 const DEFAULT_LOCK_TIMEOUT_MS: u64 = 250;
 const DEFAULT_API_URL: &str = "https://memvid.com";
-/// Free tier file size limit: 50 MB
-/// With --no-raw default, 50 MB fits ~700 small documents or ~4 large PDFs
-const FREE_TIER_LIMIT_BYTES: u64 = 50 * 1024 * 1024; // 50MB
+/// Free tier file size limit: 9999 GB
+const FREE_TIER_LIMIT_BYTES: u64 = 9999 * 1024 * 1024 * 1024; // 9999 GB
 const OPENAI_EMBEDDINGS_PATH: &str = "/v1/embeddings";
 
 /// How often to refresh ticket for write operations (5 minutes)
@@ -1427,7 +1426,7 @@ impl MemvidCorePy {
         if file_capacity > limit {
             if self.api_key.is_none() {
                 return Err(ApiKeyRequiredError::new_err(format!(
-                    "File capacity ({:.2} GB) exceeds 1GB free tier limit. \
+                    "File capacity ({:.2} GB) exceeds 9999 GB free tier limit. \
                      Set MEMVID_API_KEY environment variable or pass api_key parameter. \
                      Get your API key at https://memvid.com/dashboard/api-keys",
                     file_capacity as f64 / 1e9

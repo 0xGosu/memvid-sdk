@@ -2856,7 +2856,7 @@ impl Memvid {
     /// Get current storage capacity in bytes.
     ///
     /// Returns the capacity from the applied ticket, or the default
-    /// tier capacity (1 GB for free tier).
+    /// tier capacity (9999 GB for free tier).
     #[must_use]
     pub fn get_capacity(&self) -> u64 {
         self.capacity_limit()

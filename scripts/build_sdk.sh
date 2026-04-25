@@ -13,10 +13,16 @@
 #      `onnxruntime` Python wheel — this avoids a ~200MB download from
 #      cdn.pyke.io which is blocked in some sandboxes.
 #   5. Runs `maturin develop --release` with the feature set the SDK needs
-#      (everything except the optional `fastembed` Rust feature).
+#      (including the optional `fastembed` Rust feature so local embedding
+#      models like bge-base work without an external API key).
 #   6. Runs `tests/test_basic.py` to verify the installed extension works.
+#   7. (Optional, with --wheel) Builds a distributable wheel into .wheels/
+#      that can be installed into other venvs without re-running maturin.
 #
-# Usage:   bash scripts/build_sdk.sh
+# Usage:
+#   bash scripts/build_sdk.sh                  # develop install + tests
+#   bash scripts/build_sdk.sh --wheel          # also produce .wheels/*.whl
+#   bash scripts/build_sdk.sh --wheel-out DIR  # custom wheel output dir
 
 set -euo pipefail
 
@@ -24,6 +30,32 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 cd "${REPO_ROOT}"
+
+# ---------- CLI ----------
+BUILD_WHEEL=0
+WHEEL_OUT_DIR="${REPO_ROOT}/.wheels"
+
+while [ $# -gt 0 ]; do
+    case "$1" in
+        --wheel|--with-wheel)
+            BUILD_WHEEL=1
+            shift
+            ;;
+        --wheel-out)
+            BUILD_WHEEL=1
+            WHEEL_OUT_DIR="$2"
+            shift 2
+            ;;
+        -h|--help)
+            sed -n '2,/^$/p' "$0" | sed 's/^# \?//'
+            exit 0
+            ;;
+        *)
+            printf "Unknown argument: %s\n" "$1" >&2
+            exit 2
+            ;;
+    esac
+done
 
 # ---------- pretty output ----------
 if [ -t 1 ]; then
@@ -128,9 +160,9 @@ export ORT_PREFER_DYNAMIC_LINK="1"
 # ---------- 5. build the extension ----------
 section "Building memvid-sdk Python extension (maturin develop --release)"
 
-# Features: everything the SDK ships with except the optional `fastembed`
-# Rust feature (its only transitive need is the onnxruntime lib we've
-# already staged; keeping it off avoids a second ort-sys link step).
+# Features: everything the SDK ships with, including `fastembed` so local
+# embedding models (bge-base, etc.) work out-of-the-box. The onnxruntime
+# shared lib staged above satisfies fastembed's ort-sys link step.
 MATURIN_FEATURES=(
     --no-default-features
     -F lex
@@ -142,6 +174,7 @@ MATURIN_FEATURES=(
     -F replay
     -F encryption
     -F pdf_extract
+    -F fastembed
 )
 
 maturin develop --release "${MATURIN_FEATURES[@]}"
@@ -158,7 +191,26 @@ section "Running tests/test_basic.py"
 
 pytest tests/test_basic.py -v
 
+# ---------- 8. optional distributable wheel ----------
+# Reuses the warm cargo cache from the `maturin develop` above, so this only
+# adds the wheel-packaging step (a few seconds), not a full Rust recompile.
+if [ "${BUILD_WHEEL}" = "1" ]; then
+    section "Building distributable wheel"
+    mkdir -p "${WHEEL_OUT_DIR}"
+    maturin build --release "${MATURIN_FEATURES[@]}" --out "${WHEEL_OUT_DIR}"
+
+    WHEEL_PATH="$(ls -t "${WHEEL_OUT_DIR}"/memvid*.whl 2>/dev/null | head -1)"
+    if [ -z "${WHEEL_PATH}" ]; then
+        err "No wheel produced in ${WHEEL_OUT_DIR}"
+        exit 1
+    fi
+    ok "Wheel: ${WHEEL_PATH}"
+fi
+
 # ---------- done ----------
 section "Build complete"
 ok "memvid-sdk-free installed in ${VENV_DIR}"
 ok "Run more tests with:   source .venv/bin/activate && pytest tests/ -v"
+if [ "${BUILD_WHEEL}" = "1" ]; then
+    ok "Install the wheel elsewhere: pip install ${WHEEL_PATH}"
+fi
